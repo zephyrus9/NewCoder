@@ -9,6 +9,7 @@ while True:
             for j in range(i+1):
                 res[i-j].append(str(k))
                 k += 1
+        print(res)
         for i in range(n):
             print(' '.join(res[i]))
     except:
