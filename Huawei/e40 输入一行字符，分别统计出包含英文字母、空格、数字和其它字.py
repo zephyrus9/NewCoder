@@ -1,5 +1,6 @@
 # -*-coding: utf-8 -*-
-# Author: 
+# Author:
+
 def num_count(s):
     a = [0,0,0,0]
     for i in s:
