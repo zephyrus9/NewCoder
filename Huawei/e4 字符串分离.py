@@ -12,6 +12,7 @@ def separateStr(s):
         # print(s + '0'*(8 - len(a)))
         print(s[:8])
         return separateStr(s[8:])
+# 使用递归
 
 a = input()
 b = input()

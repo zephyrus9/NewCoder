@@ -17,13 +17,18 @@
 # for i in range(len(d)):
 #     print(d[i][0], d[i][1])
 # ----------------------------------------
-import sys
+# setdefault()函数的用法；
+# dict.setdefault(key, default=None)
+
+
+
 while True:
     try:
-        n = int(sys.stdin.readline())
+        n = int(input())
         d = {}
         for i in range(n):
-            key, value = map(int, sys.stdin.readline().split(' '))
+            key, value = map(int, input().split(' '))
+            # 当键key不存在时候，将其设置为0，d[key]=0;
             d[key] = d.setdefault(key, 0) + value
         for j in sorted(d.keys()):
             print(j, str(d[j]))

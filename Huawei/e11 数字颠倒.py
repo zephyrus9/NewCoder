@@ -6,10 +6,10 @@ while True:
         num = input()
         s = list(reversed(num))
         # print(s)
-        res = []
-        for i in s:
-            res.append(i)
-        # print(res)
-        print(''.join(res))
+        print(''.join(s))
+        # res = []
+        # for i in s:
+        #     res.append(i)
+        # print(''.join(res))
     except:
         break

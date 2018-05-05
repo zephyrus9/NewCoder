@@ -2,9 +2,8 @@
 # Author: 
 while True:
     try:
-        setence = input().split()
-        print(' '.join(setence[::-1]))
-
-
+        words = input().split()
+        print(' '.join(reversed(words)))
+        print(' '.join(words[::-1]))
     except:
         break

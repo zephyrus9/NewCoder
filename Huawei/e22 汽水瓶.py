@@ -1,6 +1,7 @@
 # -*-coding: utf-8 -*-
 # Author: 
 
+# 递归方法：
 def bottle(num):
     num = int(num)
     if num == 0 or num == 1:
