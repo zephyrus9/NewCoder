@@ -11,9 +11,16 @@ def bottle(num):
     else:
         return num // 3 + bottle(num//3 + num % 3)
 
+# 方法2：
+def bottle_2(n):
+     return int(n) // 2
+
+
 while True:
     try:
         num = input()
         print(bottle(num))
-    except:
+        print("方法2：",bottle_2(num))
+    except Exception as e:
+        print(e)
         break

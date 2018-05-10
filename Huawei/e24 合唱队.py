@@ -17,7 +17,7 @@ def search(nums, target):
 
 
 def deal(l, res):
-    b = [9999] * len(l)
+    b = [999] * len(l)
     b[0] = l[0]
     res = res + [1]
     for i in range(1, len(l)):
