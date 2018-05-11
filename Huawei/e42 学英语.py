@@ -18,7 +18,7 @@ def parse(num):
             return [tens[n//10-2]] + words(n%10)
         if n < 1000:
             return [to19[n//100-1]]+['hundred']+['and']+words(n%100)
-        for p,w in enumerate(('thousand', 'million', 'billion'), 1):
+        for p,w in enumerate(('thousand', 'million', 'billion'), 1):  # 从1起始
             if n < 1000**(p+1):
                 return words(n//1000**p)+[w]+words(n%1000**p)
     return " ".join(words(num)) or "Zero"
